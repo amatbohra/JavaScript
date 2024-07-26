@@ -50,8 +50,19 @@ const user3 = [
 ]
 // console.log(user3[1].rollno);//43
 
-console.log(user);
-console.log(Object.keys(user));//the interesting part about this is that it returns the keys in array form
-console.log(Object.values(user))//as they become an array we can apply loops and stuff
-console.log(Object.entries(user))//gives you array ke andar array..[[name,amat],[id ,123]]
-console.log(user.hasOwnProperty("id"));//true, it is to check if the object has that specific property
+// console.log(user);
+// console.log(Object.keys(user));//the interesting part about this is that it returns the keys in array form
+// console.log(Object.values(user))//as they become an array we can apply loops and stuff
+// console.log(Object.entries(user))//gives you array ke andar array..[[name,amat],[id ,123]]
+// console.log(user.hasOwnProperty("id"));//true, it is to check if the object has that specific property
+
+//destructuring of objects ie making it easy to call/access
+const course = {
+    coursename: "javascript",
+    courseInstructor: "hitesh"
+}
+//now it is tiresome to call course.courseInstructor everytime so for shortcut use 
+const {courseInstructor} = course //in braces comes the property you want to extract from the obj course
+console.log(courseInstructor);//hitesh
+const {coursename: Cname} = course
+console.log(Cname);//congrats you made a shortform 
