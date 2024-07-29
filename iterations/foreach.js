@@ -17,4 +17,15 @@ const array=[
     {language:"python",filename:"py"}
 ]
 
-array.forEach((item)=>{console.log(item.filename)})
+// array.forEach((item)=>{console.log(item.filename)})
+
+// a way to print values based on condition in for-each 
+
+const numbers=[1,2,3,4,5,6,7,8,9,10]
+const newnum=[]
+numbers.forEach((num) =>{
+    if(num>5){
+        newnum.push(num)
+    }
+})
+console.log(newnum);//6,7,8,9,10
